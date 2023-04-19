@@ -23,10 +23,11 @@ public class MainEj1 {
        CuentaBancaria primerCuenta = new CuentaBancaria();
        
        primerCuenta = scb.crearCuenta();
-       
-        System.out.println(primerCuenta.toString());
-        
-         
+       scb.ingresar(primerCuenta);
+       scb.retirar(primerCuenta);
+       scb.extraccionRapida(primerCuenta);
+       scb.consultarSaldo(primerCuenta);
+       scb.consultarDatos(primerCuenta);
     }
 
 }
